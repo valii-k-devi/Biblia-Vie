@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    background-color: #f1e9e9;
+    font-family: Arial;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #1c87c9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1px 1px;
+    text-decoration: bold;
+    font-size: 14px;
+}
+.navbar a:hover {
+    color: black;
+}
+.container {
+    padding: 30px;
+    margin-top: 35px;
+    height: 2000px;
+}
+#menubtn {
+    border: 5px;
+    color: black;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: bold;
+    display: inline-block;
+    font-family: 'Oswald';
+    font-size: 10px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    background-color: orange;
+    color: black;
+    border: 5px solid #4CAF50;
+}
+.accordion {
+    background-color: khaki;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: 10px;
+    text-align: center;
+    outline: 1px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.active, .accordion:hover {
+    background-color: MediumAquamarine;
+}
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 0;
+}
+.active:after {
+    content: "\2212";
+}
+.panel {
+    padding: 1px 30px;
+    background-color: NavajoWhite;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 5px solid #ccc;
+    background-color: #f1f1f1;
+}
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: 5px;
+    outline: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    transition: 0.5s;
+    font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+    display: block;
+    padding: 1px 1px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
