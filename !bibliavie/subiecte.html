@@ -1,92 +1,161 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ro">
- <head>
-<meta charset="utf-8">
-	<title>Biblia - Cuvântul Viu al Lui Dumnezeu Cel Preaînalt și Adevărat</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-      body {
-        margin: 0;
-        background-color: #f1e9e9;
-      }
-      .navbar {
-        overflow: hidden;
-        background-color: #1c87c9;
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-      .navbar a {
-        float: left;
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 1px 1px;
-        text-decoration: bold;
-        font-size: 14px;
-      }
-      .navbar a:hover {
-        color: black;
-      }
-      .container {
-        padding: 30px;
-        margin-top: 35px;
-        height: 2000px;
-      }
-</style>
-</head>
-<body>
-  	
-<a name="anknt"></a>
 
-    <nav class="navbar">
-      <button id="menubtn"><a href="../!bibliavie/bibliavt.html">Biblia-VT</a></button>
-      <button id="menubtn"><a href="../!bibliavie/bibliant.html">Biblia-NT</a></button>
-      <button id="menubtn"><a href="../!bibliavie/studiu.html">Studiu</a></button>
-      <button id="menubtn"><a href="../!bibliavie/subiecte.html">Subiecte</a></button>
-      <button id="menubtn"><a href="../!bibliavie/cautare.html">Căutare</a></button>
-    </nav>
-    <div class="container">
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>Biblia Harului Lui Hristos Domnul</title>
+    <meta name="keywords" content="biblia, biblia online, biblia in limba romana, biblia ortodoxa, biblia cornilescu, biblia romana, sfanta scriptura, sola scriptura, dumitru cornilescu, ortodoxa, baptista, penticostala, evanghelica, crestini, concordanta, mantuire, neprihanire, pacat, Dumnezeu, Tatal, Fiul, Duhul Sfant, Duhul Sfint, Isus, IIsus, rai, iad, pastorul, salvatorul, har, cauta in biblie">
+    <meta name="description" content="Biblia Online in Limba Romana, traducerea Ortodoxa si Dumitru Cornilescu. Ofera posibilitatea de cautare avansata in textul biblic a unui cuvant sau expresii.">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta charset="utf-8">
+    <meta name="y_key" content="d3e6520c2907cd2e">
 
-<style type="text/css">
-#menubtn {
-  border: 5px;
-  color: black;
-  padding: 5px 5px;
-  text-align: center;
-  text-decoration: bold;
-  display: inline-block;
-  font-family: 'Oswald';
-  font-size: 10px;
-  transition-duration: 0.5s;
-  cursor: pointer;
-  background-color: orange; 
-  color: black; 
-  border: 5px solid #4CAF50;
-}
-</style>
+    <!-- Add manifest here -->
+    <link rel="manifest" href="manifest.json">
 
-<div>
-<!DOCTYPE html>
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="eBible.ro">
+    <link rel="apple-touch-icon" href="custom_icon.html">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon" href="assets/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon-256x256.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/icons/icon-192x192.png">
+    <link rel="apple-touch-startup-image" href="assets/icons/launch.html">
+
+    <link rel="icon" href="assets/icons/book-open.svg" type="image/x-icon" />
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="msapplication-TileImage" content="assets/icons/icon-512x512.png">
+    <meta name="msapplication-TileColor" content="#6A3813">
+
+    <noscript>Please enable JavaScript 😭. This application requires JavaScript !!!</noscript>
+
+    <LINK REL="SHORTCUT ICON" HREF="assets/icons/book-open.svg" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/fontawesome/css/solid.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendors/fontawesome/css/fontawesome.min.css" />
+
+    <!-- jQuery -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    // scroll functions
+    $(window).scroll(function(e) {
+
+        $(window).on('scroll', function(e) {
+            //$('#topNavBar')[$(window).scrollTop() >= 150 ? 'removeClass' : 'addClass']('fixed-top');
+
+            var elmnt = document.getElementById("myBody");
+            var elHeight = elmnt.clientHeight+50;
+            var pageHeight = elmnt.scrollHeight;
+            var scrollFromTop = $(window).scrollTop();
+
+            //console.log(pageHeight - scrollFromTop );
+
+            // trebuie calculat aici cnad sa il faca vizibil
+            $('#footerNavBar')[ (pageHeight - scrollFromTop < elHeight) ? 'removeClass' : 'addClass'](
+            'navbar-hide');
+        })
+
+        // add/remove class to navbar when scrolling to hide/show
+        /*
+        var scroll = $(window).scrollTop();
+        if (scroll >= 150) {
+            $('#topNavBar').addClass("navbar-hide");
+        } else {
+            $('#topNavBar').removeClass("navbar-hide");
+        }
+        */
+
+    });
+    </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2428634-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2428634-1');
+</script>
+    </head>
+
+<body id="myBody" class="backgroundimage">
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="topNavBar1" class="navbar fixed-top navbar-expand-xl navbar-dark customBackground">
+
+                <a class="navbar-brand" href="index.html"><i class="fa fa-home"></i> Acasă</a>
+
+                <a class="nav-link" href="cautare-avansata.html"><span
+                        class="fa fa-search-plus d-md-none d-block text-white"></span><span
+                        class="d-md-block d-none text-white"><i class="fa fa-search-plus"></i> Căutare
+                        </span></a>
+						
+                <a class="nav-link" href="bibliavt.html"><span
+                        class="fa fa-list d-md-none d-block text-white"></span><span
+                        class="d-md-block d-none text-white"><i class="fa fa-book-open"></i> Biblia VT</span></a>
+						
+				<a class="nav-link" href="bibliant.html"><span
+                        class="fa fa-crown d-md-none d-block text-white"></span><span
+                        class="d-md-block d-none text-white"><i class="fa fa-book-open"></i> Biblia NT</span></a>
+
+                <a class="nav-link" href="studiu.html"><span
+                        class="fa fa-crown d-md-none d-block text-white"></span><span
+                        class="d-md-block d-none text-white"><i class="fa fa-crown"></i> Studiu</span></a>
+						
+				<a class="nav-link" href="subiecte.html"><span
+                        class="fa fa-crown d-md-none d-block text-white"></span><span
+                        class="d-md-block d-none text-white"><i class="fa fa-list"></i> Subiecte</span></a>
+						
+            </nav>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="padding-top:80px;padding-bottom:100px;">
+        <div class="row">
+            <div class="col col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
+
+       
+            <div class="search-box">
+                <div class="search-box-wrapper alert alert-dark" role="alert">
+
+                    
+
+                        <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .accordion {
-  background-color: khaki;
+  background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 10px;
+  padding: 18px;
   width: 100%;
-  border: 10px;
-  text-align: center;
-  outline: 1px;
+  border: none;
+  text-align: left;
+  outline: none;
   font-size: 15px;
-  transition: 0.5s;
+  transition: 0.4s;
 }
+
 .active, .accordion:hover {
-  background-color: MediumAquamarine;
+  background-color: #ccc;
 }
 
 .accordion:after {
@@ -94,7 +163,7 @@
   color: #777;
   font-weight: bold;
   float: right;
-  margin-left: 0;
+  margin-left: 5px;
 }
 
 .active:after {
@@ -102,35 +171,16 @@
 }
 
 .panel {
-  padding: 1px 30px;
-  background-color: NavajoWhite;
+  padding: 0 18px;
+  background-color: white;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 </style>
 </head>
-
 <body>
-<p></p>
-<p></p>
-<p></p>
-<div>
-<h3>Biblia Cuvântul Viu</h3>
-<p></p>
-<h3>Noul Testament</h3>
-<p></p>
-<p>Evangheliile (vestea bună)</p>
-<p></p>
-</div>
 
-<div>
-<button class="accordion">Matei</button>
-<div class="panel">
-
-<!-- Comment Evanghelie Matei Capitole -->
-
-<div>
 <!DOCTYPE html>
 <html>
 <head>
@@ -141,7 +191,7 @@ body {font-family: Arial;}
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 5px solid #ccc;
+  border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
 
@@ -149,11 +199,11 @@ body {font-family: Arial;}
 .tab button {
   background-color: inherit;
   float: left;
-  border: 5px;
-  outline: 5px;
+  border: none;
+  outline: none;
   cursor: pointer;
-  padding: 5px 5px;
-  transition: 0.5s;
+  padding: 14px 16px;
+  transition: 0.3s;
   font-size: 17px;
 }
 
@@ -169,450 +219,2737 @@ body {font-family: Arial;}
 
 /* Style the tab content */
 .tabcontent {
-  display: block;
-  padding: 1px 1px;
-  -webkit-animation: fadeEffect 1s;
-  animation: fadeEffect 1s;
-}
-
-/* Fade in tabs */
-@-webkit-keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
 }
 </style>
 </head>
-
 <body>
 
-<h3>Evanghelia după Ap. Matei</h3>
+<h2>Subiecte biblice cu trimiteri</h2>
+<p>Aici veţi găsi subiecte biblice (din traducerea D.Cornilescu) grupate alfabetic pentru o accesare rapidă care vă vor ajuta la înţelegerea unor aspecte apărute în viaţa fiecăruia.</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Cap.01')" id="defaultOpen">Cap.01</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.02')">Cap.02</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.03')">Cap.03</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.04')">Cap.04</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.05')">Cap.05</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.06')">Cap.06</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.07')">Cap.07</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.08')">Cap.08</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.09')">Cap.09</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.10')">Cap.10</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.11')">Cap.11</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.12')">Cap.12</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.13')">Cap.13</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.14')">Cap.14</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.15')">Cap.15</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.16')">Cap.16</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.17')">Cap.17</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.18')">Cap.18</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.19')">Cap.19</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.20')">Cap.20</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.21')">Cap.21</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.22')">Cap.22</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.23')">Cap.23</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.24')">Cap.24</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.25')">Cap.25</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.26')">Cap.26</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.27')">Cap.27</button>
-  <button class="tablinks" onclick="openCity(event, 'Cap.28')">Cap.28</button>
+  <button class="tablinks" onclick="openCity(event, 'A')">Litera A (124)</button>
+  <button class="tablinks" onclick="openCity(event, 'B')">Litera B (79)</button>
+  <button class="tablinks" onclick="openCity(event, 'C')">Litera C (225)</button>
+  <button class="tablinks" onclick="openCity(event, 'D')">Litera D (142)</button>
+  <button class="tablinks" onclick="openCity(event, 'E')">Litera E (38)</button>
+  <button class="tablinks" onclick="openCity(event, 'F')">Litera F (57)</button>
+  <button class="tablinks" onclick="openCity(event, 'G')">Litera G (27)</button>
+  <button class="tablinks" onclick="openCity(event, 'H')">Litera H (15)</button>
+  <button class="tablinks" onclick="openCity(event, 'I')">Litera I (241)</button>
+  <button class="tablinks" onclick="openCity(event, 'J')">Litera J (25)</button>
+  <button class="tablinks" onclick="openCity(event, 'L')">Litera L (72)</button>
+  <button class="tablinks" onclick="openCity(event, 'M')">Litera M (90)</button>
+  <button class="tablinks" onclick="openCity(event, 'N')">Litera N (82)</button>
+  <button class="tablinks" onclick="openCity(event, 'O')">Litera O (86)</button>
+  <button class="tablinks" onclick="openCity(event, 'P')">Litera P (229)</button>
+  <button class="tablinks" onclick="openCity(event, 'R')">Litera R (118)</button>
+  <button class="tablinks" onclick="openCity(event, 'S')">Litera S (139)</button>
+  <button class="tablinks" onclick="openCity(event, 'T')">Litera T (53)</button>
+  <button class="tablinks" onclick="openCity(event, 'U')">Litera U (37)</button>
+  <button class="tablinks" onclick="openCity(event, 'V')">Litera V (44)</button>
+  <button class="tablinks" onclick="openCity(event, 'Z')">Litera Z (10)</button>
 </div>
 
-<div id="Cap.01" class="tabcontent">
-  <h3>1. Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="A" class="tabcontent">
+
+<h4>Subiecte care încep cu litera A (124)</h4>
+
+<details>
+  <summary><strong>A batjocori (4)</span></strong></summary>
+  <p><a href="biblia/romana/cornilescu/proverbe/17/index.html">Prov. 17:5</a> · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p><a href="biblia/romana/cornilescu/proverbe/30/index.html">Prov. 30:17</a> · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p><a href="biblia/romana/cornilescu/isaia/57/index.html">Isa. 57:4</a> · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p><a href="biblia/romana/cornilescu/iuda/1/index.html">Iuda 1:18</a> · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+<details>
+  <summary><strong>A da împrumut (7)</strong></summary>
+  <p><a href="biblia/romana/cornilescu/deuteronom/15/index.html">Deut. 15:8</a> · Ci să-i deschizi mâna și să-l împrumuți cu ce-i trebuie, ca să facă față nevoilor lui.
+  <p><a href="biblia/romana/cornilescu/deuteronom/23/index.html">Deut. 23:20</a> · De la străin vei putea să iei dobândă, dar de la fratele tău să nu iei, pentru ca Domnul Dumnezeul tău să te binecuvânteze în tot ce vei face în țara pe care o vei lua în stăpânire.
+  <p><a href="biblia/romana/cornilescu/deuteronom/24/index.html">Deut. 24:10</a> · Dacă ai vreo datorie la aproapele tău, să nu intri în casa lui ca să-i iei lucrul pus zălog,
+  <p><a href="biblia/romana/cornilescu/psalmi/37/index.html">Ps. 37:26</a> · Ci el totdeauna este milos și dă cu împrumut, și urmașii lui sunt binecuvântați.
+  <p><a href="biblia/romana/cornilescu/psalmi/112/index.html">Ps. 112:5</a> · Ce bine-i merge omului care face milă și împrumută pe altul și care își rânduiește faptele după dreptate!
+  <p><a href="biblia/romana/cornilescu/matei/5/index.html">Mt. 5:42</a> · <span style="color:blue">Celui ce-ți cere, dă-i; și nu întoarce spatele celui ce vrea să se împrumute de la tine.</span>
+  <p><a href="biblia/romana/cornilescu/luca/6/index.html">Lc. 6:35</a> · <span style="color:blue">Voi, însă, iubiți pe vrăjmașii voștri, faceți bine și dați cu împrumut, fără să nădăjduiți ceva în schimb. Și răsplata voastră va fi mare și veți fi fiii Celui Preaînalt; căci El este bun și cu cei nemulțumitori, și cu cei răi.</span>
+</details>
+
+<details>
+  <summary><strong>A da socoteală (8)</strong></summary>
+  <p><a href="biblia/romana/cornilescu/matei/12/index.html">Mt. 12:36</a> · <span style="color:blue">Vă spun că, în ziua judecății, oamenii vor da socoteală de orice cuvânt nefolositor, pe care-l vor fi rostit.</span>
+  <p><a href="biblia/romana/cornilescu/matei/18/index.html">Mt. 18:23</a> · <span style="color:blue">De aceea, Împărăția cerurilor se aseamănă cu un împărat care a vrut să se socotească cu robii săi.</span>
+  <p><a href="biblia/romana/cornilescu/matei/21/index.html">Mt. 21:34</a> · <span style="color:blue">Când a venit vremea roadelor, a trimis pe robii săi la vieri, ca să ia partea lui de rod.</span>
+  <p><a href="biblia/romana/cornilescu/matei/25/index.html">Mt. 25:19</a> · <span style="color:blue">După multă vreme, stăpânul robilor acelora s-a întors și le-a cerut socoteală.</span>
+  <p><a href="biblia/romana/cornilescu/luca/12/index.html">Lc. 12:48</a> · <span style="color:blue">Dar cine n-a știut-o și a făcut lucruri vrednice de lovituri va fi bătut cu puține lovituri. Cui i s-a dat mult, i se va cere mult și cui i s-a încredințat mult, i se va cere mai mult.</span>
+  <p><a href="biblia/romana/cornilescu/luca/19/index.html">Lc. 19:15</a> · <span style="color:blue">Când s-a întors înapoi, după ce își luase împărăția, a spus să cheme pe robii aceia cărora le dăduse banii, ca să vadă cât câștigase fiecare cu ei din negoț.</span>
+  <p><a href="biblia/romana/cornilescu/romani/14/index.html">Rom. 14:12</a> · Așa că fiecare din noi are să dea socoteală despre sine însuși lui Dumnezeu.
+  <p><a href="biblia/romana/cornilescu/petru-1/4/index.html">1Pet. 4:4</a> · De aceea se miră ei că nu alergați împreună cu ei la același potop de desfrâu și vă batjocoresc.
+  <p><a href="biblia/romana/cornilescu/petru-1/4/index.html">1Pet. 4:5</a> · Dar au să dea socoteală înaintea Celui ce este gata să judece viii și morții.
+</details>
+
+<details>
+  <summary><strong>A doua venire a Lui Hristos (12)</strong></summary>
+  <p><a href="biblia/romana/cornilescu/psalmi/98/index.html">Ps. 98:9</a> · înaintea Domnului, căci El vine să judece pământul! El va judeca lumea cu dreptate și popoarele cu nepărtinire.
+  <p><a href="biblia/romana/cornilescu/daniel/7/index.html">Dan. 7:13</a> · M-am uitat în timpul vedeniilor mele de noapte și iată că pe norii cerurilor a venit unul ca un fiu al omului; a înaintat spre Cel Îmbătrânit de zile și a fost adus înaintea Lui.
+  <p><a href="biblia/romana/cornilescu/zaharia/14/index.html">Zah. 14:5</a> · Veți fugi atunci în valea munților Mei, căci valea dintre munți se va întinde până la Ațel, și veți fugi cum ați fugit de cutremurul de pământ de pe vremea lui Ozia, împăratul lui Iuda. Și atunci va veni Domnul Dumnezeul meu și toți sfinții împreună cu El!
+  <p><a href="biblia/romana/cornilescu/matei/26/index.html">Mt. 26:64</a> · <span style="color:blue">„Da”</span>, i-a răspuns Isus, <span style="color:blue">„sunt! Ba mai mult, vă spun că de acum încolo veți vedea pe Fiul omului șezând la dreapta puterii lui Dumnezeu și venind pe norii cerului.”</span>
+  <p><a href="biblia/romana/cornilescu/marcu/13/index.html">Mc. 13:26</a> · <span style="color:blue">Atunci se va vedea Fiul omului venind pe nori cu mare putere și cu slavă.</span>
+  <p><a href="biblia/romana/cornilescu/marcu/14/index.html">Mc. 14:62</a> · <span style="color:blue">„Da, sunt”</span>, i-a răspuns Isus. <span style="color:blue">„Și veți vedea pe Fiul omului șezând la dreapta puterii și venind pe norii cerului.”</span>
+  <p><a href="biblia/romana/cornilescu/luca/21/index.html">Lc. 21:27</a> · <span style="color:blue">Atunci, vor vedea pe Fiul omului venind pe un nor cu putere și slavă mare.</span>
+  <p><a href="biblia/romana/cornilescu/fapte/1/index.html">Fapt. 1:11</a> · și au zis: „Bărbați galileeni, de ce stați și vă uitați spre cer? Acest Isus care S-a înălțat la cer din mijlocul vostru va veni în același fel cum L-ați văzut mergând la cer.”
+  <p><a href="biblia/romana/cornilescu/corinteni-1/11/index.html">1Cor. 11:26</a> · Pentru că, ori de câte ori mâncați din pâinea aceasta și beți din paharul acesta, vestiți moartea Domnului până va veni El.
+  <p><a href="biblia/romana/cornilescu/corinteni-1/15/index.html">1Cor. 15:23</a> · dar fiecare la rândul cetei lui. Cristos este cel dintâi rod, apoi, la venirea Lui, cei ce sunt ai lui Cristos.
+  <p><a href="biblia/romana/cornilescu/evrei/9/index.html">Evr. 9:28</a> · tot așa, Cristos, după ce S-a adus jertfă o singură dată, ca să poarte păcatele multora, Se va arăta a doua oară nu în vederea păcatului, ci ca să aducă mântuirea celor ce-L așteaptă.
+  <p><a href="biblia/romana/cornilescu/petru-2/3/index.html">2Pet. 3:10</a> · Ziua Domnului însă va veni ca un hoț. În ziua aceea, cerurile vor trece cu trosnet, trupurile cerești se vor topi de mare căldură și pământul, cu tot ce este pe el, va arde.
+</details>
+
+<details>
+  <summary><strong>A face dreptate (11)</strong></summary>
+  <p><a href="biblia/romana/cornilescu/numeri/27/index.html">Num. 27:4</a> · Pentru ce să se stingă numele tatălui nostru din mijlocul familiei lui, pentru că n-a avut fii? Dă-ne și nouă deci o moștenire între frații tatălui nostru.”
+  <p><a href="biblia/romana/cornilescu/deuteronom/16/index.html">Deut. 16:20</a> · Să urmezi cu scumpătate dreptatea, ca să trăiești și să stăpânești țara pe care ți-o dă Domnul Dumnezeul tău.
+  <p><a href="biblia/romana/cornilescu/cronici-2/9/index.html">2Cron. 9:8</a> · Binecuvântat să fie Domnul Dumnezeul tău, care S-a îndurat de tine și te-a pus pe scaunul Lui de domnie ca împărat pentru Domnul Dumnezeul tău! Pentru că Dumnezeul tău iubește pe Israel și vrea să-l facă să rămână în picioare pe vecie, pentru aceea te-a pus împărat peste el, ca să faci judecată și dreptate.”
+  <p><a href="biblia/romana/cornilescu/psalmi/58/index.html">Ps. 58:1</a> · Oare tăcând faceți voi dreptate? Oare așa judecați voi fără părtinire, fiii oamenilor?
+  <p><a href="biblia/romana/cornilescu/psalmi/82/index.html">Ps. 82:3</a> · Faceți dreptate celui slab și orfanului, dați dreptate nenorocitului și săracului,
+  <p><a href="biblia/romana/cornilescu/psalmi/119/index.html">Ps. 119:121</a> · Păzesc legea și dreptatea: nu mă lăsa în voia asupritorilor mei!
+  <p><a href="biblia/romana/cornilescu/proverbe/21/index.html">Prov. 21:3</a> · A face dreptate și judecată este mai plăcut Domnului decât jertfele.
+  <p><a href="biblia/romana/cornilescu/isaia/56/index.html">Isa. 56:1</a> · Așa vorbește Domnul: „Păziți ce este drept și faceți ce este bine, căci mântuirea Mea este aproape să vină și neprihănirea Mea este aproape să se arate.
+  <p><a href="biblia/romana/cornilescu/plingerile/3/index.html">Plâng. 3:36</a> · când este nedreptățit un om în pricina lui, nu vede Domnul?
+  <p><a href="biblia/romana/cornilescu/romani/13/index.html">Rom. 13:7</a> · Dați tuturor ce sunteți datori să dați: cui datorați birul, dați-i birul; cui datorați vama, dați-i vama; cui datorați frica, dați-i frica; cui datorați cinstea, dați-i cinstea.
+  <p><a href="biblia/romana/cornilescu/coloseni/4/index.html">Col. 4:1</a> · Stăpânilor, dați robilor voștri ce le datorați și ce li se cuvine, căci știți că și voi aveți un Stăpân în cer.
+</details>
+
+<details>
+  <summary><strong>A fi singur (4)</strong></summary>
+  <p>Gen. 28:11 · A ajuns într-un loc unde a rămas peste noapte, căci asfințise soarele. A luat o piatră de acolo, a pus-o căpătâi și s-a culcat în locul acela.
+  <p>Gen. 32:24 · Iacov însă a rămas singur. Atunci, un om s-a luptat cu el până în revărsatul zorilor.
+  <p>Ps. 55:7 · Da, aș fugi departe de tot și m-aș duce să locuiesc în pustie.
+  <p>Lc. 5:16 · Iar El Se ducea în locuri pustii și Se ruga.
+</details>
+
+<details>
+  <summary><strong>A întreba pe Dumnezeu (6)</strong></summary>
+  <p>Gen. 25:22 · Copiii se băteau în pântecele ei, și ea a zis: „Dacă-i așa, pentru ce mai sunt însărcinată?” S-a dus să întrebe pe Domnul.
+  <p>Jud. 1:1 · După moartea lui Iosua, copiii lui Israel au întrebat pe Domnul și au zis: „Cine dintre noi să se suie întâi împotriva canaaniților, ca să pornească lupta cu ei?”
+  <p>Jud. 20:27 · Și copiii lui Israel au întrebat pe Domnul – acolo se găsea atunci chivotul legământului lui Dumnezeu,
+  <p>2Sam. 2:1 · După aceea, David a întrebat pe Domnul: „Să mă sui în vreuna din cetățile lui Iuda?” Domnul i-a răspuns: „Suie-te.” David a zis: „Unde să mă sui?” Și Domnul a răspuns: „La Hebron.”
+  <p>1Cron. 14:14 · David a întrebat iarăși pe Dumnezeu. Și Dumnezeu i-a zis: „Să nu te sui după ei; întoarce-te de la ei și mergi asupra lor prin fața duzilor.
+  <p>Ps. 78:34 · Când îi lovea de moarte, ei Îl căutau, se întorceau și se îndreptau spre Dumnezeu;
+</details>
+
+<details>
+  <summary><strong>A lua împrumut (6)</strong></summary>
+  <p>Exod. 22:14 · Dacă un om împrumută altuia o vită, și vita își strică un mădular sau moare în lipsa stăpânului ei, va trebui s-o plătească.
+  <p>2Împ. 6:5 · Și, pe când tăia unul din ei o bârnă, a căzut fierul de la secure în apă. El a strigat: „Ah, domnul meu, era împrumutat!”
+  <p>Ps. 37:21 · Cel rău ia cu împrumut și nu dă înapoi, dar cel neprihănit este milos și dă.
+  <p>Prov. 22:7 · Bogatul stăpânește peste cei săraci, și cel ce ia cu împrumut este robul celui ce-i dă cu împrumut.
+  <p>Mt. 5:42 · <span style="color:blue">Celui ce-ți cere, dă-i; și nu întoarce spatele celui ce vrea să se împrumute de la tine.</span>
+  <p>Lc. 11:5 · Apoi le-a mai zis: <span style="color:blue">„Dacă unul dintre voi are un prieten și se duce la el la miezul nopții și-i zice: «Prietene, împrumută-mi trei pâini,</span>
+</details>
+
+<details>
+  <summary><strong>A plânge după cineva (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>A-L uita pe Domnul (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Aaron (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Abate-te de la rău (4)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Abel (5)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Abigail (5)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Abilități spirituale (7)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Absalom (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Absenţa prezenţei Lui Dumnezeu (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Abstinența de la alcool (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Acceptare (4)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Acceptarea autorității Bisericii (8)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Acceptarea ispitei (4)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Acceptarea voii Lui Dumnezeu (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Acuila și Priscila (6)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Acuzat de nebunie (8)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Acuzații false (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adam (5)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adevăr neînțeles (8)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adevărata înțelepciune (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adevărata măreție (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adevărul deplin (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adevărul Lui Hristos (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adevărul Lui Dumnezeu (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adopția copiilor (7)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Aduceri aminte (de Domnul) (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adulter (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adulter spiritual (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adunarea comorilor în cer (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adunarea creștină (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adunarea de bogății (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Adunarea poporului lui Dumnezeu (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Agar (5)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ahab (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ajutor pentru cel în nevoie (8)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ajutorul Domnului în necazuri (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ajutorul Domnului în slăbiciune (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ajutorul Domnului pentru cei credincioși (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ajutorul oferit de copii (7)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Alegerea între bine și rău (5)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Alegerea lucrătorilor (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Alegeri înțelepte (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Alegeri neînțelepte (6)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Alergarea creștinului (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ales de Dumnezeu (7)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Aleși de Dumnezeu pentru slujire (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Aleșii lui Dumnezeu (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Altare pentru închinare (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Alunecarea în păcat (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Alungat dinaintea Lui Dumnezeu (5)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Amăgire (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Amăgirea păcatului (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Amânare (6)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Amânarea pedepsei (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Amărăciune (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ambiția satanică (4)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Amin (4)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Amintește-ți de Domnul (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Amintiri dureroase (5)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ana (6)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Andrei (9)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Anticrist (4)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Anul de veselie (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Apa vieții (5)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Apărarea credinței (4)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Apărătorul celor slabi (7)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Apolo (6)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Apostoli (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Aproape de Domnul (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Apropierea de Dumnezeu (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Apropierea judecății (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Apropierea revenirii Lui Hristos (7)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Apucat de mână (7)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Arătări ale îngerilor (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Arătările Lui Dumnezeu (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Arătările Lui Isus după înviere (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Armura credinciosului (4)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Armura duhovnicească (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Aroganță (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Aruncarea în focul cel veșnic (4)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ascultarea avertismentelor (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ascultarea Cuvântului (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ascultarea de Hristos (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ascultarea de Dumnezeu (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ascultarea lui Hristos (9)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Ascunderea păcatului (7)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Asemănarea cu lumea (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Asemeni copiilor (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Așteptând răspunsul Domnului (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Așternutul picioarelor Lui Dumnezeu (5)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Asuprire (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Atacul satanic (5)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Atins de Hristos (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Atitudine față de rău (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Atitudini față de Hristos (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Atitudini în închinare (8)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Atitudini pentru rugăciune (8)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Atotcunoașterea Lui Dumnezeu (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Atotputernicia Lui Dumnezeu (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Atragerea divină (4)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Autocondamnare (7)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Autoînșelare (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Autoritatea apostolului Pavel (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Autoritatea în Biserică (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Autoritatea Lui Hristos (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Auzire fără ascultare (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Avertismente împotriva celor răi (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Avertismente împotriva certurilor (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Avertismente împotriva mândriei (11)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Avertizarea celor răi (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Avertizarea celui neascultător (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Avertizarea lingușitorilor (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Avertizarea necredincioșiei (10)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Avertizarea necredinței (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Avertizări (exemple) (9)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.02" class="tabcontent">
-  <h3>2. Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="B" class="tabcontent">
+
+<h4>Subiecte care încep cu litera B (79)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+  <p>
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.03" class="tabcontent">
-  <h3>3. Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="C" class="tabcontent">
+
+<h4>Subiecte care încep cu litera C (225)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.04" class="tabcontent">
-  <h3>4. Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="D" class="tabcontent">
+
+<h4>Subiecte care încep cu litera D (142)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.05" class="tabcontent">
-  <h3>5. Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="E" class="tabcontent">
+
+<h4>Subiecte care încep cu litera E (38)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.06" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="F" class="tabcontent">
+
+<h4>Subiecte care încep cu litera F (57)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.07" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="G" class="tabcontent">
+
+<h4>Subiecte care încep cu litera G (27)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.08" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="H" class="tabcontent">
+
+<h4>Subiecte care încep cu litera H (15)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html> 
+ 
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.09" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="I" class="tabcontent">
+
+<h4>Subiecte care încep cu litera I (241)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.10" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="J" class="tabcontent">
+
+<h4>Subiecte care încep cu litera J (25)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.11" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="L" class="tabcontent">
+
+<h4>Subiecte care încep cu litera L (72)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.12" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="M" class="tabcontent">
+
+<h4>Subiecte care încep cu litera M (90)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.13" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="N" class="tabcontent">
+
+<h4>Subiecte care încep cu litera N (82)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.14" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="O" class="tabcontent">
+
+<h4>Subiecte care încep cu litera O (86)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.15" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="P" class="tabcontent">
+
+<h4>Subiecte care încep cu litera P (229)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.16" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="R" class="tabcontent">
+
+<h4>Subiecte care încep cu litera R (118)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.17" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="S" class="tabcontent">
+
+<h4>Subiecte care încep cu litera S (139)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.18" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="T" class="tabcontent">
+
+<h4>Subiecte care încep cu litera T (53)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.19" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="U" class="tabcontent">
+
+<h4>Subiecte care încep cu litera U (37)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.20" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+<div id="V" class="tabcontent">
+
+<h4>Subiecte care încep cu litera V (44)</h4>
+
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
+
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
-<div id="Cap.21" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
-</div>
+<div id="Z" class="tabcontent">
 
-<div id="Cap.22" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
-</div>
+<h4>Subiecte care încep cu litera Z (10)</h4>
 
-<div id="Cap.23" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
-</div>
+<details>
+  <summary><strong>Avraam (Avram) (12)</strong></summary>
+  <p>Prov. 17:5 · Cine își bate joc de sărac își bate joc de Cel ce l-a făcut; cine se bucură de o nenorocire nu va rămâne nepedepsit.
+  <p>Prov. 30:17 · Pe ochiul care își bate joc de tatăl său și nesocotește ascultarea de mamă îl vor scobi corbii de la pârâu și îl vor mânca puii de vultur.
+  <p>Isa. 57:4 · De cine vă bateți voi joc? Împotriva cui vă deschideți voi gura larg și scoateți limba? Nu sunteți voi niște copii ai păcatului, o sămânță a minciunii,
+  <p>Iuda 1:18 · cum vă spuneau că în vremurile din urmă vor fi batjocoritori, care vor trăi după poftele lor nelegiuite.
+</details>
 
-<div id="Cap.24" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
-</div>
-
-<div id="Cap.25" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
-</div>
-
-<div id="Cap.26" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
-</div>
-
-<div id="Cap.27" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
-</div>
-
-<div id="Cap.28" class="tabcontent">
-  <h3>Iluminare - trecere de la moarte în trup la viață în Conștiința divină</h3>
-  <p>1. Dintotdeauna este Conștiința, «Ceea Ce Este» și «Ceea Ce Transformă».
-  <p>2. Conștiința a creat văzutele și nevăzutele.
-  <p>3. Conștiința se manifestă în existența văzută.
-  <p>4. Mintea se opune conștiinței divine.
-  <p>5. Mintea crede doar în văzute și refuză esența divină.
-  <p>6. Mintea are ca sfârșit moartea trupului care o conține.
-  <p>7. Conștiința divină transcende materia și este nemuritoare și infinită.
-  <p>8. Cel ce se închină minții sale va muri negreșit.
-  <p>9. Cel ce își închide mintea va auzi glasul conștiinței divine și va fi veșnic întru ea.
-  <p>10. Glorie Lui Hristos Iesous, Cuvântul conștiinței divine, care s-a întrupat și a venit în lume ca să aducă Lumina ei. Amin.
+</body>
+</html>
+  
+  <h3>go to the top</h4>
+  <p>sus inapoi la tabs menu
 </div>
 
 <script>
@@ -629,179 +2966,12 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-
-// Get the element with id="defaultOpen" and click on it
-
-  document.getElementById("defaultOpen").click();
 </script>
    
 </body>
 </html> 
 </div>
-
 </div>
-
-<p>
-  
-<div>
-<button class="accordion">Marcu</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-</div>
-
-<div>
-<button class="accordion">Luca</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">Ioan</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">Faptele Apostolilor</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<p>Epistolele Ap. Pavel (scrisori)
-
-<div>
-<button class="accordion">Romani</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-</div>
-
-<div>
-<button class="accordion">1 Corinteni</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">2 Corinteni</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">Galateni</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">Efeseni</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">Filipeni</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">Coloseni</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">1 Tesaloniceni</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">2 Tesaloniceni</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">1 Timotei</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">2 Timotei</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">Tit</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">Filimon</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">Evrei</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<p>Restul cărților
-
-
-<div>
-<button class="accordion">Iacov</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">1 Petru</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">2 Petru</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">1 Ioan</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">2 Ioan</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">3 Ioan</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">Iuda</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-</div>
-
-<div>
-<button class="accordion">Apocalipsa / Revelația</button>
-<div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 </div>
 
 <script>
@@ -816,10 +2986,26 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-    }
+    } 
   });
 }
 </script>
 
 </body>
+</html>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav id="footerNavBar"
+            class="navbar fixed-bottom navbar-hide navbar-dark alert-dark medium font-bold text-justify text-dark w-100">
+            <small>Prin truda robului nevrednic Valentin şi a fratelui George întru gloria Lui Isus Hristos.
+			Amin. Aleluia. Maranatha!</small>
+        </nav>
+    </div>
+</div>
+
+</body>
+
+
+
 </html>
