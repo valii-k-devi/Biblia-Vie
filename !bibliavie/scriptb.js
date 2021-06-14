@@ -28,7 +28,7 @@ function processData() {
                     const capitol = cartib[idCarte].capitoleb[idCapitol];
                     
                     for (const versetb of capitol.verseteb) {
-                        var elementVerset = document.createElement("li");
+                        var elementVerset = document.createElement("p");
                         elementVerset.textContent = versetb;
                         listaVerseteb.appendChild(elementVerset);
                     }
