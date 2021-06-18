@@ -1,6 +1,6 @@
 var sectiuni = [
 	{
-		"nume": "Evanghelii",
+		"nume": "Evangheliile (Vestea Bună)",
 		"carti": [
 			{
 				"nume": "Matei (C.28)",
@@ -8454,7 +8454,7 @@ var sectiuni = [
 		]
 	},
 	{
-		"nume": "Epistole",
+		"nume": "Epistolele Ap. Pavel (Scrisori)",
 		"carti": [
 			{
 				"nume": "Romani (C.16)",
@@ -15710,6 +15710,11 @@ var sectiuni = [
 					},
 				]
 			},
+		]
+	},
+	{
+		"nume": "Alte Epistole (Scrisori)",
+		"carti": [
 			{
 				"nume": "Iacov (C.5)",
 				"capitole": [
@@ -16876,7 +16881,7 @@ var sectiuni = [
 							"Căci trei sunt care mărturisesc [ în cer: Tatăl, Cuvântul și Duhul Sfânt, și acești trei una sunt. ]*1",
 							"5.08",
 							"[ Și trei sunt care mărturisesc pe pământ: ]*2 Duhul, apa și sângele, și acești trei sunt una în mărturisirea lor.",
-							"(*1 şi *2 Comma Johanneum este alcătuită din cele două versete 7 şi 8 din capitolul 5 al primei epistole a apostolului Ioan care sunt considerate a fi adăugate de scribi. Aceasta a devenit un vârf al dezbaterilor dintre protestanți și catolici cu privire la adevărul doctrinei Trinităţii la începutul epocii moderne. Fraza a apărut mai întâi ca o adăugire la Vulgata, o traducere ecleziastică a Bibliei în limba latină și a pătruns în tradiția manuscriselor grecești în secolul al XV-lea d.Hr. Ea nu apare în cele mai vechi manuscrise latine și pare să fi fost la origine o glosă (notă pe marginea manuscrisului) ce datează din jurul secolului al IV-lea d.Hr. Unii copiști au încorporat această notă în textul principal de-a lungul Evului Mediu. Primul manuscris grecesc al Noului Testament care conține Comma datează din secolul al XV-lea. Comma este absentă din traducerile Noului Testament grecesc în limbile etiopiană, aramaică, siriacă, slavonă bisericească, armeană clasică, georgiană veche și arabă. Ea apare în unele traduceri în limba engleză ale Bibliei ca urmare a includerii ei în primul manuscris tipărit al Noului Testament, Nouum instrumentum omne al lui Erasmus, care a adăugat-o în textul său în 1522. Comma nu apare în manuscrise grecești dinaintea lui Erasmus, el incluzând-o în textul Noului Testament pentru a nu fi trecut în Registrul de cărți catalogate ca eretice al Bisericii Catolice. Textul are cursivitate şi logică şi fără Comma Johanneum, iar doctrina Trinităţii nu depinde exclusiv de această adăugire, ea fiind mărturisită de multe ori de Domnul nostru Christos Iesous.)",
+							"(*1 şi *2 Comma Johanneum este alcătuită din cele două versete 7 şi 8 din capitolul 5 al primei epistole a apostolului Ioan care sunt considerate a fi interpolate adică adăugate de scribi. Aceasta a devenit un vârf al dezbaterilor dintre protestanți și catolici cu privire la adevărul doctrinei Trinităţii la începutul epocii moderne. Textul are cursivitate şi logică şi fără Comma Johanneum, iar doctrina Trinităţii nu depinde exclusiv de această adăugire, ea fiind mărturisită de multe ori de Domnul nostru Christos Iesous. Detalii aici: https://ro.wikipedia.org/wiki/Comma_Johanneum)",
 							"5.09",
 							"Dacă primim mărturisirea oamenilor, mărturisirea lui Dumnezeu este mai mare; și mărturisirea lui Dumnezeu este mărturisirea pe care a făcut-o El despre Fiul Său.",
 							"5.10",
